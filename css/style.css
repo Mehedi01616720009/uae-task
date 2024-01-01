@@ -71,7 +71,7 @@
     --hidden: hidden;
 
     /*=============== BORDER ==================*/
-    --boder: 1px solid rgba(0, 54, 82, 0.08);
+    --border: 1px solid rgba(0, 54, 82, 0.08);
 
     /*=============== BOX SHADOW ==================*/
     --box-shadow: 0 15px 30px rgb(5 5 5 / 23%);
@@ -194,7 +194,7 @@ button {
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: .5rem;
+    gap: .5rem;
 }
 
 /* column */
@@ -527,7 +527,7 @@ button {
     flex-wrap: wrap;
 }
 
-.nowrap {
+.flex_nowrap {
     flex-wrap: nowrap;
 }
 
@@ -599,7 +599,7 @@ button {
         flex-wrap: wrap;
     }
     
-    .nowrap_sm {
+    .flex_nowrap_sm {
         flex-wrap: nowrap;
     }
     
@@ -672,7 +672,7 @@ button {
         flex-wrap: wrap;
     }
     
-    .nowrap_md {
+    .flex_nowrap_md {
         flex-wrap: nowrap;
     }
     
@@ -745,7 +745,7 @@ button {
         flex-wrap: wrap;
     }
     
-    .nowrap_lg {
+    .flex_nowrap_lg {
         flex-wrap: nowrap;
     }
 
@@ -818,7 +818,7 @@ button {
         flex-wrap: wrap;
     }
     
-    .nowrap_xl {
+    .flex_nowrap_xl {
         flex-wrap: nowrap;
     }
     
@@ -891,7 +891,7 @@ button {
         flex-wrap: wrap;
     }
     
-    .nowrap_xxl {
+    .flex_nowrap_xxl {
         flex-wrap: nowrap;
     }
     

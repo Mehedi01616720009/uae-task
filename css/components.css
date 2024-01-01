@@ -241,3 +241,13 @@
         margin-bottom: 1rem;
     }
 }
+
+/* card */
+.card {
+    border: var(--border);
+}
+
+.card_btn {
+    padding: .5rem .75rem;
+    font-size: var(--small-font-size);
+}
