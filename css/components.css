@@ -194,6 +194,11 @@
     transform-origin: 50% 100%;
 }
 
+.modal_title {
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
 .modal_close {
     font-size: .8rem;
     width: 1.5rem;
@@ -208,6 +213,10 @@
     top: 1.5rem;
     right: 1.5rem;
     cursor: pointer;
+}
+
+.modal_content .btn {
+    width: 100%;
 }
 
 /* show modal */
@@ -225,5 +234,10 @@
         width: 450px;
         margin: auto;
         border-radius: .75rem;
+    }
+
+    .modal_title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
 }
