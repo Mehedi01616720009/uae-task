@@ -1,0 +1,229 @@
+/* input */
+.input {
+    width: 100%;
+    padding: .75rem 1rem;
+    font-size: var(--normal-font-size);
+    background: #EFF0F6;
+    border-radius: var(--m-0-25);
+}
+
+/* button */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    width: max-content;
+    padding: .75rem 1rem;
+    background: var(--tartiary-color);
+    color: var(--white-color);
+    font-size: var(--normal-font-size);
+    transition: var(--transition);
+}
+
+/* toggle */
+.toggle_dropdown {
+    position: relative;
+}
+
+.toggle_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    cursor: pointer;
+}
+
+.toggle_dropdown_list {
+    background: var(--white-color);
+    width: max-content;
+    display: grid;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 8px -4px rgb(58 53 65 / 42%);
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: .3s;
+}
+
+.toggle_dropdown_list.active {
+    display: grid;
+    z-index: var(--z-tooltip);
+}
+
+.toggle_dropdown_list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.toggle_dropdown_list a:hover {
+    background: var(--light-bg-color);
+}
+
+/* select 2 */
+.select_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.option_selected {
+    background: var(--light-bg-color);
+    border-radius: var(--m-0-25);
+}
+
+.option_container {
+    display: grid;
+    background: var(--light-bg-color);
+    width: 100%;
+    transition: all .4s;
+    border-radius: var(--m-0-25);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 3rem;
+}
+
+.select_box.select-active .option_container {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.option_container::-webkit-scrollbar {
+    width: .35rem;
+    background: var(--light-bg-color);
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.option_container::-webkit-scrollbar-thumb {
+    background: var(--text-light-color);
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.option_search {
+    width: 100%;
+    padding: .75rem 1.5rem;
+}
+
+.option_search input {
+    width: 100%;
+    background: transparent;
+}
+
+.option_selected {
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.option {
+    transition: .2s;
+}
+
+.option_selected.active {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.option label {
+    cursor: pointer;
+    display: grid;
+    padding: .75rem 1.5rem;
+    transition: .2s;
+    background: var(--light-bg-color);
+}
+
+.option label:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.option_container .option input[type=radio]:checked label {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.option_radio {
+    display: none;
+}
+
+/*======= MODAL ========*/
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-fixed);
+    display: grid;
+    align-items: flex-end;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    perspective: 1000px;
+}
+
+.modal_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--text-color);
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.modal_content {
+    position: relative;
+    background: var(--white-color);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem 1rem 0 0;
+    transition: all .3s;
+    box-shadow: 0 0 30px 0px rgb(5 5 5 / 11%);
+    transform: rotateX(65deg) scale(.75) translateY(10%);
+    transform-origin: 50% 100%;
+}
+
+.modal_close {
+    font-size: .8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--white-color);
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+/* show modal */
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-modal .modal_content {
+    transform: rotateX(0) scale(1) translateY(0);
+}
+
+@media screen and (min-width: 576px) {
+    .modal_content {
+        width: 450px;
+        margin: auto;
+        border-radius: .75rem;
+    }
+}
