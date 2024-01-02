@@ -244,6 +244,7 @@
 
 /* card */
 .card {
+    display: grid;
     background: var(--white-color);
     border: var(--border);
     transition: all .3s linear;
@@ -256,4 +257,17 @@
 .card_btn {
     padding: .5rem .75rem;
     font-size: var(--small-font-size);
+}
+
+/* card horizontal */
+.card_hz {
+    grid-template-columns: 1fr 2fr;
+}
+
+.card_hz .card_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
 }

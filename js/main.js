@@ -51,6 +51,18 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*========= category slider =========*/
+var swiper = new Swiper(".banner_slider", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+});
+
+/*========= category slider =========*/
 var swiper = new Swiper(".product_category_slider", {
     slidesPerView: 3,
     spaceBetween: 16,
