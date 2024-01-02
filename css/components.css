@@ -271,3 +271,23 @@
     object-position: center;
     -o-object-position: center;
 }
+
+/* form */
+.form_grp {
+    display: grid;
+    row-gap: var(--m-0-25);
+}
+
+.input_right_icon {
+    position: absolute;
+    top: 50%;
+    right: .75rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+}
+
+.input_right_icon:hover {
+    opacity: 1;
+}
