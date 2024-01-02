@@ -244,7 +244,13 @@
 
 /* card */
 .card {
+    background: var(--white-color);
     border: var(--border);
+    transition: all .3s linear;
+}
+
+.card:hover {
+   box-shadow: var(--box-shadow-light);
 }
 
 .card_btn {
