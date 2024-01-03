@@ -21,6 +21,11 @@
     transition: var(--transition);
 }
 
+.btn:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
 /* toggle */
 .toggle_dropdown {
     position: relative;
