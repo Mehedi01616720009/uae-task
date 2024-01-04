@@ -166,3 +166,26 @@ const toggleSelect = (select) => {
         select.classList.add('select-active')
     }
 }
+
+/*=============== SHOW / HIDDEN PASSWORD ===============*/
+function showHiddenPassword(passInputId, passInputIcon) {
+    const passInput = document.getElementById(passInputId),
+        iconEye = document.getElementById(passInputIcon);
+    
+    // Change password to text
+    if(passInput.type === 'password'){
+        // Switch to text
+        passInput.type = 'text'
+
+        // Change icon
+        iconEye.classList.remove('fa-eye-slash');
+        iconEye.classList.add('fa-eye');
+    }else{
+        // Change to password
+        passInput.type = 'password'
+
+        // Remove icon
+        iconEye.classList.remove('fa-eye');
+        iconEye.classList.add('fa-eye-slash');
+    }
+};
