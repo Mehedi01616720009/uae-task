@@ -8455,26 +8455,161 @@ button {
 }
 
 /* border */
-.border_1 {
+/* border width */
+.b_1 {
     border-width: 1px;
 }
 
-.border_top_1 {
+.b_2 {
+    border-width: 2px;
+}
+
+.b_3 {
+    border-width: 3px;
+}
+
+.bt_1 {
     border-top-width: 1px;
 }
 
-.border_dashed {
+.bt_2 {
+    border-top-width: 2px;
+}
+
+.bt_3 {
+    border-top-width: 3px;
+}
+
+.br_1 {
+    border-right-width: 1px;
+}
+
+.br_2 {
+    border-right-width: 2px;
+}
+
+.br_3 {
+    border-right-width: 3px;
+}
+
+.bb_1 {
+    border-bottom-width: 1px;
+}
+
+.bb_2 {
+    border-bottom-width: 2px;
+}
+
+.bb_3 {
+    border-bottom-width: 3px;
+}
+
+.bl_1 {
+    border-left-width: 1px;
+}
+
+.bl_2 {
+    border-left-width: 2px;
+}
+
+.bl_3 {
+    border-left-width: 3px;
+}
+
+/* border style */
+.b_solid {
+    border-style: solid;
+}
+
+.b_dashed {
     border-style: dashed;
 }
 
-.border_top_dashed {
+.b_dotted {
+    border-style: dotted;
+}
+
+.bt_solid {
+    border-top-style: solid;
+}
+
+.bt_dashed {
     border-top-style: dashed;
 }
 
-.border_light {
+.bt_dotted {
+    border-top-style: dotted;
+}
+
+.br_solid {
+    border-right-style: solid;
+}
+
+.br_dashed {
+    border-right-style: dashed;
+}
+
+.br_dotted {
+    border-right-style: dotted;
+}
+
+.bb_solid {
+    border-bottom-style: solid;
+}
+
+.bb_dashed {
+    border-bottom-style: dashed;
+}
+
+.bb_dotted {
+    border-bottom-style: dotted;
+}
+
+.bl_solid {
+    border-left-style: solid;
+}
+
+.bl_dashed {
+    border-left-style: dashed;
+}
+
+.bl_dotted {
+    border-left-style: dotted;
+}
+
+/* border color */
+.b_primary {
+    border-color: var(--primary-color);
+}
+
+.b_secondary {
+    border-color: var(--secondary-color);
+}
+
+.b_tartiary {
+    border-color: var(--tartiary-color);
+}
+
+.b_dark {
+    border-color: var(--text-color);
+}
+
+.b_light {
     border-color: var(--text-light-color);
 }
 
-.border_top_light {
-    border-top-color: var(--text-light-color);
+.b_success {
+    border-color: var(--success-color);
+}
+
+.b_info {
+    border-color: var(--info-color);
+}
+
+.b_warning {
+    border-color: var(--warning-color);
+}
+
+.b_danger {
+    border-color: var(--danger-color);
 }
