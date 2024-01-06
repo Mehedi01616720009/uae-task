@@ -246,3 +246,82 @@
 .login_register_section .btn {
     width: 100%;
 }
+
+/* checkout page */
+.checkout_section {
+    z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .checkout_section::before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: var(--gray-color);
+        z-index: -1;
+    }
+}
+
+.checkout_section .btn {
+    width: 100%;
+}
+
+.checkout_label {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.75rem 1rem;
+    border-radius: var(--m-0-25);
+}
+
+@media screen and (max-width: 576px) {
+    .checkout_btn {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: .5rem 1rem;
+        background: var(--white-color);
+    }
+}
+
+.order_summary_card, 
+.order_summary_card_data {
+    display: grid;
+}
+
+.order_summary_card {
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: .75rem;
+}
+
+.order_summary_card .order_summary_card_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .order_summary_card {
+        grid-template-columns: max-content 1fr;
+        column-gap: .75rem;
+    }
+
+    .order_summary_card .order_summary_card_content {
+        width: 100px;
+    }
+}
+
+.cupon_form {
+    grid-template-columns: 1fr max-content;
+}
+
+@media screen and (min-width: 768px) {
+    .cupon_form .input { 
+        background: var(--white-color);
+    }
+}

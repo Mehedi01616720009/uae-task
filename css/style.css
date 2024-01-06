@@ -19,6 +19,7 @@
     --danger-bg-color: #FAC7D5;
     --black-color: #000000;
     --white-color: #FFFFFF;
+    --gray-color: #EFF0F6;
     --text-color: #242424;
     --text-light-color: #777777;
 
@@ -8451,4 +8452,29 @@ button {
 
 .bg_danger_hover:hover {
     background: var(--danger-bg-color);
+}
+
+/* border */
+.border_1 {
+    border-width: 1px;
+}
+
+.border_top_1 {
+    border-top-width: 1px;
+}
+
+.border_dashed {
+    border-style: dashed;
+}
+
+.border_top_dashed {
+    border-top-style: dashed;
+}
+
+.border_light {
+    border-color: var(--text-light-color);
+}
+
+.border_top_light {
+    border-top-color: var(--text-light-color);
 }
