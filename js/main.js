@@ -189,3 +189,49 @@ function showHiddenPassword(passInputId, passInputIcon) {
         iconEye.classList.add('fa-eye-slash');
     }
 };
+
+/*=============== counter input ===============*/
+const incBtns = document.getElementsByClassName('counter_increment'),
+    decBtns = document.getElementsByClassName('counter_decrement');
+
+for (const incBtn of incBtns) {
+    incBtn.addEventListener('click', (event) => {
+        const counterInput = event.target.parentElement.children[1];
+        
+        // get input value
+        const counterInputValue = counterInput.value;
+
+        // get input max value
+        const counterInputMax = counterInput.getAttribute('max');
+
+        // increment input value
+        const newValue = parseInt(counterInputValue) + 1;
+
+        if (counterInputMax >= newValue) {
+            counterInput.value = newValue;
+        } else {
+            alert("This is max number");
+        }
+    });
+}
+
+for (const decBtn of decBtns) {
+    decBtn.addEventListener('click', (event) => {
+        const counterInput = event.target.parentElement.children[1];
+        
+        // get input value
+        const counterInputValue = counterInput.value;
+
+        // get input min value
+        const counterInputMin = counterInput.getAttribute('min');
+
+        // increment input value
+        const newValue = parseInt(counterInputValue) - 1;
+
+        if (counterInputMin <= newValue) {
+            counterInput.value = newValue;
+        } else {
+            alert("This is min number");
+        }
+    });
+}

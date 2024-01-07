@@ -247,6 +247,38 @@
     width: 100%;
 }
 
+/* cart page */
+.single_cart_card {
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.single_cart_card .single_cart_card_content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
+
+.cart_item_remove {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .single_cart_card {
+        grid-template-columns: max-content 1fr;
+        gap: 1rem;
+    }
+
+    .single_cart_card .single_cart_card_content {
+        width: 110px;
+    }
+}
+
+.cart_cupon_form {
+    grid-template-columns: 1fr max-content;
+}
+
 /* checkout page */
 .checkout_section {
     z-index: 0;

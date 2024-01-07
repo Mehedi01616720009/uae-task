@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <title>Home - Saravex</title>
 </head>
-<body onload="getLocation()">
+<body>
 
 <!--======== header ========-->
 <header class="header">
@@ -373,204 +373,154 @@
 
 <!--======== main content ========-->
 <main>
-    <!--======== checkout section ========-->
-    <section class="checkout_section py_1_75 py_2_5_lg position_relative">
+    <!--======== cart section ========-->
+    <section class="cart_section py_1_75 py_2_5_lg">
         <div class="container">
             <div class="row">
-                <div class="col_12 col_md_6 pr_1_md pr_2_xl">
-                    <form action="" method="" class="grid gap_1_lg">
-                        <div class="checkout_label flex justify_start gap_0_5">
-                            <i class="fa-solid fa-user"></i>
-                            <h6>Personal Information</h6>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-email">Email Address *</label>
-                            <div>
-                                <input type="email" name="" id="user-email" class="input" placeholder="Your email address">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-phone">Phone Number *</label>
-                            <div>
-                                <input type="tel" name="" id="user-phone" class="input" placeholder="Your phone number">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-name">Name *</label>
-                            <div>
-                                <input type="text" name="" id="user-name" class="input" placeholder="Your name">
-                            </div>
-                        </div>
-
-                        <div class="checkout_label flex justify_start gap_0_5 mt_1">
-                            <i class="fa-solid fa-truck"></i>
-                            <h6>Shipping Information</h6>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-address">Steet Address *</label>
-                            <div>
-                                <input type="text" name="" id="user-address" class="input" placeholder="Your address">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-city">Town / City *</label>
-                            <div>
-                                <input type="text" name="" id="user-city" class="input" placeholder="Your city or town">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-post-code">Postal / Zip Code *</label>
-                            <div>
-                                <input type="text" name="" id="user-post-code" class="input" placeholder="Your post code">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-state">State *</label>
-                            <div>
-                                <input type="text" name="" id="user-state" class="input" placeholder="Your state">
-                            </div>
-                        </div>
-
-                        <div class="checkout_label flex justify_start gap_0_5 mt_1">
-                            <i class="fa-solid fa-credit-card"></i>
-                            <h6>Payment Information</h6>
-                        </div>
-
-                        <div class="flex flex_wrap justify_start gap_0_5 my_0_5">
-                            <label for="cod" class="radio_label">
-                                <input type="radio" class="radio" name="radio" id="cod">
-                                <span class="radio_checked">Cash on Delivery</span>
-                            </label>
-        
-                            <label for="card-pay" class="radio_label">
-                                <input type="radio" class="radio" name="radio" id="card-pay">
-                                <span class="radio_checked">Credit / Debit Card</span>
-                            </label>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-card-name">Card Holder Name *</label>
-                            <div>
-                                <input type="text" name="" id="user-card-name" class="input" placeholder="Your name">
-                            </div>
-                        </div>
-
-                        <div class="form_grp">
-                            <label for="user-card-number">Card Number *</label>
-                            <div>
-                                <input type="text" name="" id="user-card-number" class="input" placeholder="Card number">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col_8 col_lg_6">
-                                <div class="form_grp">
-                                    <label for="user-card-date">Expired Date *</label>
-                                    <div>
-                                        <input type="month" name="" id="user-card-date" class="input">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col_4 col_lg_6">
-                                <div class="form_grp">
-                                    <label for="user-card-cvv">CVV *</label>
-                                    <div>
-                                        <input type="password" name="" id="user-card-cvv" class="input" placeholder="XXX">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="checkout_btn">
-                            <button type="submit" class="btn radius_0_25">Place Order</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col_12 col_md_6 mt_1_5 mt_0_md pl_1_md pl_2_xl">
-                    <h5 class="mb_0_75">Order Summary</h5>
-
+                <!--==== cart products ====-->
+                <div class="col_12 col_md_6">
                     <div class="grid">
-                        <div class="order_summary_card">
-                            <div class="order_summary_card_content hidden radius_0_5">
+                        <!--==== cart single product card ====-->
+                        <div class="single_cart_card grid">
+                            <div class="single_cart_card_content hidden radius_0_5">
                                 <img src="products/14.jpg" alt="">
                             </div>
-    
-                            <div class="order_summary_card_data align_self_center">
-                                <h6>Boss Perfume</h6>
-                                <p class="font_10 font_medium">Qty: 2</p>
-                                <p class="font_semi">$16.32</p>
+
+                            <div class="single_cart_card_data grid align_self_center gap_0_5 py_0_25 py_0_5_lg">
+                                <div class="flex align_baseline col_gap_0_5">
+                                    <h5>Boss Perfume</h5>
+
+                                    <div class="cart_item_remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="counter_input">
+                                        <span class="counter_decrement">-</span>
+                                        <input type="number" name="" id="" min="1" max="22" value="1">
+                                        <span class="counter_increment">+</span>
+                                    </div>
+
+                                    <p class="font_semi">$8.16</p>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="order_summary_card">
-                            <div class="order_summary_card_content hidden radius_0_5">
+
+                        <!--==== cart single product card ====-->
+                        <div class="single_cart_card grid">
+                            <div class="single_cart_card_content hidden radius_0_5">
                                 <img src="products/16.jpg" alt="">
                             </div>
-    
-                            <div class="order_summary_card_data align_self_center">
-                                <h6>Lady Apex Shoes</h6>
-                                <p class="font_10 font_medium">Qty: 1</p>
-                                <p class="font_semi">$29.47</p>
+
+                            <div class="single_cart_card_data grid align_self_center gap_0_5 py_0_25 py_0_5_lg">
+                                <div class="flex align_baseline col_gap_0_5">
+                                    <h5>Lady Apex Shoe</h5>
+
+                                    <div class="cart_item_remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="counter_input">
+                                        <span class="counter_decrement">-</span>
+                                        <input type="number" name="" id="" min="1" max="6" value="1">
+                                        <span class="counter_increment">+</span>
+                                    </div>
+
+                                    <p class="font_semi">$29.47</p>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="order_summary_card">
-                            <div class="order_summary_card_content hidden radius_0_5">
+
+                        <!--==== cart single product card ====-->
+                        <div class="single_cart_card grid">
+                            <div class="single_cart_card_content hidden radius_0_5">
                                 <img src="products/17.jpg" alt="">
                             </div>
-    
-                            <div class="order_summary_card_data align_self_center">
-                                <h6>Sunglass</h6>
-                                <p class="font_10 font_medium">Qty: 3</p>
-                                <p class="font_semi">$18.56</p>
+
+                            <div class="single_cart_card_data grid align_self_center gap_0_5 py_0_25 py_0_5_lg">
+                                <div class="flex align_baseline col_gap_0_5">
+                                    <h5>Sunglass Lorem ipsum dolor sit amet.</h5>
+
+                                    <div class="cart_item_remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="counter_input">
+                                        <span class="counter_decrement">-</span>
+                                        <input type="number" name="" id="" min="1" max="6" value="1">
+                                        <span class="counter_increment">+</span>
+                                    </div>
+
+                                    <p class="font_semi">$6.19</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="cupon_form grid mt_1">
-                        <div class="form_grp">
-                            <div>
-                                <input type="text" name="" id="user-cupon" class="input" placeholder="Cupon code for discount">
+                    <!--==== cart cupon form ====-->
+                    <div class="row mt_1">
+                        <div class="col_12 col_lg_9">
+                            <div class="cart_cupon_form grid">
+                                <div class="form_grp">
+                                    <div>
+                                        <input type="text" name="" id="user-cupon" class="input" placeholder="Cupon code for discount">
+                                    </div>
+                                </div>
+        
+                                <button class="btn radius_0_25">Apply</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+                
+                <!--==== cart summary ====-->
+                <div class="col_12 col_md_6 h_max">
+                    <div class="bg_secondary text_tartiary radius_1_25 mt_1 mt_0_md ml_1_25_md ml_2_5_lg px_1 py_1_25 px_2_25_lg py_3_lg">
+                        <h5 class="mb_1">Order Summary</h5>
 
-                        <button class="btn radius_0_25">Apply</button>
+                        <div class="grid">
+                            <div class="flex font_semi">
+                                <p>Subtotal</p>
+                                <p>$64.35</p>
+                            </div>
+
+                            <div class="flex font_semi">
+                                <p>Shipping</p>
+                                <p>$8</p>
+                            </div>
+
+                            <div class="flex font_semi">
+                                <p>Discount</p>
+                                <p>$0.00</p>
+                            </div>
+
+                            <div class="flex font_semi">
+                                <p>Tax (7%)</p>
+                                <p>$5.07</p>
+                            </div>
+
+                            <div class="flex pt_0_5 bt_1 bt_dashed b_light">
+                                <h5>Grand Total</h5>
+                                <h5>$77.42</h5>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="grid mt_1">
-                        <div class="flex text_light font_semi">
-                            <p>Subtotal</p>
-                            <p>$64.35</p>
-                        </div>
+                    <div class="flex flex_wrap gap_0_5 mt_1 ml_1_25_md ml_2_5_lg">
+                        <a href="" class="btn radius_0_25">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Continue Shopping</span>
+                        </a>
 
-                        <div class="flex text_light font_semi">
-                            <p>Shipping</p>
-                            <p>$8</p>
-                        </div>
-
-                        <div class="flex text_light font_semi">
-                            <p>Discount</p>
-                            <p>$0.00</p>
-                        </div>
-
-                        <div class="flex text_light font_semi">
-                            <p>Tax (7%)</p>
-                            <p>$5.07</p>
-                        </div>
-
-                        <div class="flex text_tartiary pt_0_5 bt_1 bt_dashed b_light">
-                            <h6>Grand Total</h6>
-                            <h6>$77.42</h6>
-                        </div>
+                        <a href="" class="btn radius_0_25">
+                            <span>Confirm Order</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>

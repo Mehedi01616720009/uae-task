@@ -379,3 +379,45 @@
     background: var(--tartiary-color);
     color: var(--secondary-color);
 }
+
+/* counter input */
+.counter_input {
+    width: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.counter_input .counter_decrement, 
+.counter_input .counter_increment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+    color: var(--tartiary-color);
+    font-weight: var(--font-semi-bold);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.counter_input input {
+    width: max-content;
+    text-align: center;
+    padding: .25rem 0;
+    width: 30px;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+    .counter_input .counter_increment {
+        width: 22px;
+        height: 22px;
+    }
+
+    .counter_input input {
+        width: 34px;
+        font-size: 1rem;
+    }
+}

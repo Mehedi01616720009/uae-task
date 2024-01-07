@@ -176,6 +176,11 @@ button {
     cursor: pointer;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    display: none;
+}
+
 /*========== REUSABLE CLASS ============*/
 /*======== layout ========*/
 /* container */
@@ -569,6 +574,10 @@ button {
     align-items: center;
 }
 
+.align_baseline {
+    align-items: baseline;
+}
+
 .align_self_center {
     align-self: center;
 }
@@ -643,6 +652,10 @@ button {
     
     .align_center_sm {
         align-items: center;
+    }
+
+    .align_baseline_sm {
+        align-items: baseline;
     }
 
     .align_self_center_sm {
@@ -722,6 +735,10 @@ button {
         align-items: center;
     }
 
+    .align_baseline_md {
+        align-items: baseline;
+    }
+
     .align_self_center_md {
         align-self: center;
     }
@@ -797,6 +814,10 @@ button {
     
     .align_center_lg {
         align-items: center;
+    }
+
+    .align_baseline_lg {
+        align-items: baseline;
     }
 
     .align_self_center_lg {
@@ -876,6 +897,10 @@ button {
         align-items: center;
     }
 
+    .align_baseline_xl {
+        align-items: baseline;
+    }
+
     .align_self_center_xl {
         align-self: center;
     }
@@ -951,6 +976,10 @@ button {
     
     .align_center_xxl {
         align-items: center;
+    }
+
+    .align_baseline_xxl {
+        align-items: baseline;
     }
 
     .align_self_center_xxl {
