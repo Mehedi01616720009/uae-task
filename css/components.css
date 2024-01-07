@@ -252,6 +252,7 @@
     display: grid;
     background: var(--white-color);
     border: var(--border);
+    position: relative;
     transition: all .3s linear;
 }
 

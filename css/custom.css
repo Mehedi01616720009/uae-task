@@ -395,3 +395,8 @@
         border-right: 0;
     }
 }
+
+/* wishlist page */
+.wishlist_item_remove {
+    cursor: pointer;
+}
