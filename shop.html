@@ -378,7 +378,56 @@
         <div class="container">
             <div class="row gap_1_md">
                 <!--======== side filter section ========-->
-                <div class="col_12 col_md_5 col_lg_4">
+                <div class="side_filter_section grid col_12 col_md_5 col_lg_4 gap_0_75 h_max" id="side-filter-section">
+                    <!--======== mobile filter toggle ========-->
+                    <div class="mobile_filter_toggle flex bg_light radius_0_5 p_1 display_none_md" id="mobile-filter-toggle">
+                        <p>Show Filter</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <!--======== category filter ========-->
+                    <div class="category_filter b_shadow p_1 p_1_5_lg radius_0_5">
+                        <h6 class="mb_0_5 mb_0_75_lg">Product Categories</h6>
+        
+                        <div class="flex flex_col justify_start align_start gap_0_25">
+                            <label for="men-fashion" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="men-fashion">
+                                <p>Men's Fashion (25)</p>
+                            </label>
+
+                            <label for="women-fashion" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="women-fashion">
+                                <p>Women's Fashion (63)</p>
+                            </label>
+
+                            <label for="kid-fashion" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="kid-fashion">
+                                <p>Kids Fashion (67)</p>
+                            </label>
+
+                            <label for="shoe" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="shoe">
+                                <p>Shoe (24)</p>
+                            </label>
+
+                            <label for="gadgets" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="gadgets">
+                                <p>Gadgets (105)</p>
+                            </label>
+
+                            <label for="grocery" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="grocery">
+                                <p>Grocery (42)</p>
+                            </label>
+
+                            <label for="perfume" class="flex justify_start align_center gap_0_5">
+                                <input type="radio" name="product_category" id="perfume">
+                                <p>Perfume (13)</p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--======== price filter ========-->
                     <div class="price_filter_slider b_shadow p_1 p_1_5_lg radius_0_5">
                         <h6 class="mb_0_5 mb_0_75_lg">Filter by price</h6>
         
@@ -404,11 +453,35 @@
                             <button class="btn btn_sm">Filter</button>
                         </div>
                     </div>
+
+                    <!--======== stock filter ========-->
+                    <div class="stock_status_filter b_shadow p_1 p_1_5_lg radius_0_5">
+                        <h6 class="mb_0_5 mb_0_75_lg">Stock status</h6>
+
+                        <div class="flex flex_col justify_start align_start">
+                            <label for="in-stock" class="flex justify_start align_center gap_0_5">
+                                <input type="checkbox" name="stock_status" id="in-stock">
+                                <p>In stock</p>
+                            </label>
+
+                            <label for="in-sale" class="flex justify_start align_center gap_0_5">
+                                <input type="checkbox" name="stock_status" id="in-sale">
+                                <p>On sale</p>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <!--======== product section ========-->
                 <div class="col_12 col_md_7 col_lg_8">
-                    <div class="row gap_0_75_md gap_1_lg">
+                    <!--======== all products topbar ========-->
+                    <div class="bg_light radius_0_5 p_1 px_1_5_lg mb_0_5">
+                        <h5 class="mb_0_25">All Products</h5>
+                        <p class="text_light font_12 font_14_lg">Total 339 products found</p>
+                    </div>
+
+                    <!--======== products grid ========-->
+                    <div class="row gap_0_75_md gap_1_lg mb_0_5 mb_1_5_lg">
                         <div class="col_6 col_lg_4">
                             <div class="card radius_1 hidden h_100">
                                 <div class="card_content">
@@ -640,6 +713,27 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!--======== products pagination ========-->
+                    <div class="products_pagination flex flex_wrap justify_center gap_0_25">
+                        <a href="#" class="bg_secondary bg_tartiary_hover p_0_25 px_0_5_lg radius_0_25">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">1</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">2</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">3</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">4</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">5</a>
+                        <p class="text_dark">.....</p>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">10</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">11</a>
+                        <a href="#" class="bg_secondary bg_tartiary_hover px_0_5 py_0_25 radius_0_25">12</a>
+
+                        <a href="#" class="bg_secondary bg_tartiary_hover p_0_25 px_0_5_lg radius_0_25">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>

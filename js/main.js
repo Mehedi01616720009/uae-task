@@ -190,6 +190,14 @@ function showHiddenPassword(passInputId, passInputIcon) {
     }
 };
 
+/*=============== mobile filter toggle ===============*/
+const mobileFilterToggle = document.getElementById('mobile-filter-toggle'),
+    mobileFilterSection = document.getElementById('side-filter-section');
+
+mobileFilterToggle.addEventListener('click', function() {
+    mobileFilterSection.classList.toggle('active');
+});
+
 /*=============== counter input ===============*/
 const incBtns = document.getElementsByClassName('counter_increment'),
     decBtns = document.getElementsByClassName('counter_decrement');
