@@ -417,6 +417,11 @@
     color: var(--tartiary-color);
 }
 
+.category_filter label.active {
+    color: var(--tartiary-color);
+    font-weight: var(--font-semi-bold);
+}
+
 .mobile_filter_toggle {
     cursor: pointer;
     font-weight: var(--font-semi-bold);
