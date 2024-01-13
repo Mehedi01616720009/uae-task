@@ -442,3 +442,17 @@
 .products_pagination a {
     color: var(--white-color);
 }
+
+@media screen and (min-width: 768px) {
+    .order_track_form {
+        grid-template-columns: 1fr 1fr max-content;
+        align-items: end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .order_track_wrapper {
+        grid-column: span 8 / span 8;
+        grid-column-start: 3;
+    }
+}
