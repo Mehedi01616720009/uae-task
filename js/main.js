@@ -190,14 +190,6 @@ function showHiddenPassword(passInputId, passInputIcon) {
     }
 };
 
-/*=============== mobile filter toggle ===============*/
-const mobileFilterToggle = document.getElementById('mobile-filter-toggle'),
-    mobileFilterSection = document.getElementById('side-filter-section');
-
-mobileFilterToggle.addEventListener('click', function() {
-    mobileFilterSection.classList.toggle('active');
-});
-
 /*=============== counter input ===============*/
 const incBtns = document.getElementsByClassName('counter_increment'),
     decBtns = document.getElementsByClassName('counter_decrement');
@@ -285,4 +277,12 @@ rangeInput.forEach(input =>{
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
         }
     });
+});
+
+/*=============== mobile filter toggle ===============*/
+const mobileFilterToggle = document.querySelector('#mobile-filter-toggle'),
+    mobileFilterSection = document.querySelector('#side-filter-section');
+
+mobileFilterToggle.addEventListener('click', function() {
+    mobileFilterSection.classList.toggle('active');
 });
