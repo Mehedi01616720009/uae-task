@@ -496,3 +496,10 @@
 .order_track_card:nth-child(3) .order_progress_dot {
     background: var(--tartiary-color);
 }
+
+.terms_condition_section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}

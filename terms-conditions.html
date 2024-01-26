@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======== google fonts ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--======== fonts awesome ========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--======== swiper css ========-->
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!--======== style css ========-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--======== style css ========-->
+    <link rel="stylesheet" href="css/components.css">
+
+    <!--======== custom css ========-->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Home - Saravex</title>
+</head>
+<body>
+
+<!--======== header ========-->
+<header class="header">
+    <!--======== topbar ========-->
+    <div class="topbar bg_secondary display_none_lg">
+        <div class="container py_0_5">
+            <div class="flex">
+                <div class="toggle_dropdown language_switch">
+                    <div class="toggle_btn language_switch_btn">
+                        <img src="images/uk-symbol.png" alt="" class="toggle_btn_trigger">
+                        <span class="toggle_btn_trigger">English</span>
+                        <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                    </div>
+                    
+                    <div class="toggle_dropdown_list language_switch_list">
+                        <a href="#">
+                            <img src="images/uk-symbol.png" alt="">
+                            <span>English</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/uae-symbol.png" alt="">
+                            <span>Bangla</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="topbar_info font_semi font_16">Support: 01765375500</div>
+            </div>
+        </div>
+    </div>
+
+    <!--======== main header ========-->
+    <div class="main_header bg_primary">
+        <div class="container py_0_5">
+            <div class="flex">
+                <div class="flex gap_1_25_lg">
+                    <!--======== menu toggle button ========-->
+                    <div class="nav_toggle font_20 pr_0_75 display_none_lg" id="nav-toggle">
+                        <i class="fa-solid fa-bars nav_toggle_trigger"></i>
+                    </div>
+
+                    <!--======== sidebar menu ========-->
+                    <div class="nav_menu position_relative display_none_lg" id="nav-menu">
+                        <!-- nav close -->
+                        <div class="nav_close flex justify_center position_absolute" id="nav-close">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <!-- sign in -->
+                        <div class="sidebar_signin flex justify_start col_gap_0_75 bg_secondary px_1_5 py_1">
+                            <div class="sidebar_sign_content font_20">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="sidebar_sign_data font_18">Hello, sign in</div>
+                        </div>
+
+                        <!-- pages -->
+                        <div class="sidebar_menu y_scroll thin_scrollbar">
+                            <!-- main pages -->
+                            <div class="sidebar_main_pages">
+                                <p class="font_18 font_semi px_1_5 pt_1 pb_0_5">Main Pages</p>
+
+                                <ul class="flex flex_col">
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Home</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>All Products</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Wishlist</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Compare</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- categories pages -->
+                            <div class="sidebar_main_pages">
+                                <p class="font_18 font_semi px_1_5 pt_1 pb_0_5">Categories</p>
+
+                                <ul class="flex flex_col">
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Men's Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Women's Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Kids Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Shoes</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Gadgets</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Grocery</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Sunglass</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Jwellery</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Perfume</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--======== logo ========-->
+                    <a href="#" class="nav_logo">
+                        <img src="images/logo.png" alt="">
+                    </a>
+
+                    <!--===== location =====-->
+                    <button class="location_btn display_none display_flex_lg flex align_end gap_0_25 font_12 font_medium" data-modal-target="#location-modal">
+                        <i class="fa-solid fa-location-dot font_18"></i>
+                        <div>
+                            Deliver to<br>
+                            <span class="font_14">Bangladesh</span>
+                        </div>
+                    </button>
+
+                    <!--===== location modal =====-->
+                    <div class="modal_container" id="location-modal">
+                        <div class="modal_background"></div>
+                        <div class="modal_content">
+                            <div class="modal_close button_hover close_modal" title="Close" data-close-button><i class="fa-solid fa-xmark"></i></div>
+                
+                            <h4 class="modal_title">Select Delivery Address</h4>
+                
+                            <div class="modal_body">
+                                <div class="radius_0_25 hidden">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.95338886736!2d90.41968899999999!3d23.7808405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1704097224869!5m2!1sen!2sbd" width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
+                                <button class="btn bg_tartiary radius_0_25 mt_1">Confirm Location</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--======== desktop searchbar ========-->
+                    <div class="display_none display_block_lg">
+                        <form action="" method="post" class="search_form grid gap_0_5 radius_0_5">
+                            <div class="header_search_select flex gap_0_25 px_0_5">
+                                <div class="select_box">
+                                    <div class="option_selected">
+                                        All
+                                    </div>
+                                    <div class="option_container">
+                                        <div class="option_search">
+                                            <input type="text" name="" placeholder="Search...">
+                                        </div>
+                            
+                                        <div class="option">
+                                            <input type="radio" name="" id="men-fashion" class="option_radio">
+                                            <label for="men-fashion">Men's Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="women-fashion" class="option_radio">
+                                            <label for="women-fashion">Women's Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="kid-fashion" class="option_radio">
+                                            <label for="kid-fashion">Kids Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="grocery" class="option_radio">
+                                            <label for="grocery">Grocery</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="gadget" class="option_radio">
+                                            <label for="gadget">Gadgets</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="shoe" class="option_radio">
+                                            <label for="shoe">Shoes</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="jwellary" class="option_radio">
+                                            <label for="jwellary">Jwellary</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                            </div>
+
+                            <input type="email" name="" id="" class="px_1 py_0_5" placeholder="Search Savarex">
+            
+                            <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex gap_0_75 gap_1_25_lg">
+                    <!--===== sign in =====-->
+                    <a href="#" class="flex gap_0_5 header_signin_btn display_none_lg">
+                        <span>Sign in</span>
+                        <span class="font_20"><i class="fa-regular fa-user"></i></span>
+                    </a>
+
+                    <!--===== language switch =====-->
+                    <div class="toggle_dropdown language_switch display_none display_block_lg">
+                        <div class="toggle_btn language_switch_btn">
+                            <img src="images/uk-symbol.png" alt="" class="toggle_btn_trigger">
+                            <span class="toggle_btn_trigger">EN</span>
+                            <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                        </div>
+                        
+                        <div class="toggle_dropdown_list language_switch_list">
+                            <a href="#">
+                                <img src="images/uk-symbol.png" alt="">
+                                <span>EN</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/uae-symbol.png" alt="">
+                                <span>BN</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--===== desktop sign in =====-->
+                    <a href="#" class="display_none display_block_lg font_12 font_medium">
+                        Hello, sign in<br>
+                        <span class="font_14">Your Account</span>
+                    </a>
+
+                    <!--===== return =====-->
+                    <a href="#" class="display_none display_block_lg font_12 font_medium">
+                        Returns<br>
+                        <span class="font_14">& Orders</span>
+                    </a>
+
+                    <!--===== cart =====-->
+                    <a href="#" class="nav_cart font_20">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container display_none_lg">
+            <form action="" method="post" class="mobile_search_form grid gap_0_5 hidden radius_0_5">
+                <input type="email" name="" id="" class="px_1 py_0_5" placeholder="Search Savarex">
+
+                <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+
+        <div class="container py_0_75 x_scroll no_scrollbar display_none_lg">
+            <ul class="w_max font_16 flex gap_0_75">
+                <li><a href="#">All Products</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Best Seller</a></li>
+                <li><a href="">Men's Fashion</a></li>
+                <li><a href="">Women's Fashion</a></li>
+                <li><a href="">Kids Fashion</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Grocery</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Jwellary</a></li>
+                <li><a href="">Perfume</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--======== secondary header ========-->
+    <div class="secondary_header bg_secondary">
+        <div class="container py_0_75 display_none display_block_lg">
+            <ul class="flex_lg justify_start_lg gap_1_25_lg">
+                <li><a href="">Home</a></li>
+                <li><a href="">All Product</a></li>
+                <li><a href="">Wishlist</a></li>
+                <li><a href="">Compare</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="container py_0_75 display_none_lg">
+            <button class="location_btn flex justify_start gap_0_25" data-modal-target="#location-modal">
+                <i class="fa-solid fa-location-dot font_18"></i>
+                <span>Deliver to Bangladesh</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--======== main content ========-->
+<main>
+    <!--======== terms condition section ========-->
+    <section class="terms_condition_section py_1_75">
+        <div class="container">
+            <h3 class="text_center mb_2_5">Terms and Conditions</h3>
+
+            <div class="grid gap_1 text_light">
+                <p class="">
+                    These Terms and Conditions govern your use of the saravexhypermarket.com website (the “saravexhypermarket.com site”), the Saravex stores (Hypermarket, Fresh Supermarket, and Express), the terms of any purchases that you make via Saravex stores and saravexhypermarket.com site, and your relationship with Saravex Hypermarket (“Saravex”, “saravexhypermarket.com ”, “we” or “us”). Please read them carefully as they affect your rights and liabilities under the law. By using the site and/or registering on the site, you agree to these Terms and Conditions and to our Privacy and Cookies Policy.
+                </p>
+
+                <p class="font_semi">
+                    1.  BASIS OF USE OF THE SARAVEX HYPERMARKET SITE
+                </p>
+
+                <p class="">
+                    1.1 The saravexhypermarket.com site is provided to you free of charge for your personal use subject to these Terms and Conditions and our Privacy Policy. By using the saravexhypermarket.com site you agree to be bound by these Terms and Conditions and our Privacy Policy.
+                </p>
+
+                <p class="">
+                    1.2 These Terms and Conditions govern your use of the saravexhypermarket.com site in general, the products that you purchase in Saravex stores and on the saravexhypermarket.com site and all services provided in connection with them.
+                </p>
+
+                <p class="font_semi">
+                    2.  REGISTRATION
+                </p>
+
+                <p class="">
+                    2.1 To register on the saravexhypermarket.com site you must be over eighteen years of age.
+                </p>
+
+                <p class="">
+                    2.2 You must ensure that the details provided by you on registration or at any other time are correct and complete.
+                </p>
+
+                <p class="">
+                    We may update these Terms and Conditions at any time by revising details of this page. We recommend that you visit this page every now and then to see the changes made, as they are binding on you whenever you choose to continue purchasing products in our stores and the saravexhypermarket.com online shop, and if you continue to use the site. 
+                </p>
+
+                <p class="">
+                    These Terms and Conditions were last updated on 8th May 2019.
+                </p>
+
+                <p class="font_semi">
+                    3.  PASSWORD AND SECURITY
+                </p>
+
+                <p class="">
+                    3.1 When you register to use the saravexhypermarket.com site you will be asked to create a password. You should keep this password confidential and not disclose it or share it with anyone. You will be responsible for all activities and orders that occur or are submitted under your password. If you know or suspect that someone else knows your password, you should notify us by contacting customer services immediately (see paragraph 24 below for contact details).
+                </p>
+
+                <p class="">
+                    3.2 If saravexhypermarket.com has reason to believe that there is likely to be a breach of security or misuse of the saravexhypermarket.com site, we may require you to change your password or we may suspend your account in accordance with paragraph 21 below.
+                </p>
+
+                <p class="font_semi">
+                    4.  INTELLECTUAL PROPERTY
+                </p>
+
+                <p class="">
+                    4.1 The content of the saravexhypermarket.com site is protected by copyright, trademarks, database and other intellectual property rights. You may retrieve and display the content of the saravexhypermarket.com site on a computer screen, store such content in electronic form on disk (but not any server or other storage device connected to a network) or print one copy of such content for your own personal, non-commercial use, provided you keep intact all and any copyright and proprietary notices. You may not otherwise reproduce, modify, copy or distribute or use for commercial purposes any of the materials or content on the saravexhypermarket.com site without written permission from saravexhypermarket.com.
+                </p>
+
+                <p class="">
+                    4.2 No licence is granted to you in these Terms and Conditions to use any trademark of Saravex stores and saravexhypermarket.com, or its affiliated companies.
+                </p>
+
+                <p class="font_semi">
+                    5.  LIMITATIONS
+                </p>
+
+                <p class="">
+                    5.1 You may not use the saravexhypermarket.com site for any of the purposes set out below (this includes any use by you of the Community sites – see paragraph 6 below for further information about the Community sites):
+                </p>
+
+                <ul>
+                    <li>Gaining unauthorised access to other computer systems</li>
+                    <li>Interfering with any other person’s use or enjoyment of the saravexhypermarket.com site</li>
+                    <li>Interfering or disrupting networks or websites connected to the saravexhypermarket.com site</li>
+                    <li>Making, transmitting or storing electronic copies of materials protected by copyright   without the permission of the owner</li>
+                    <li>Transmitting material containing any form of advertising or promotion for goods and services, junk mail, chain letters or “spam”</li>
+                    <li>Impersonating another person</li>
+                    <li>Referring to specific website addresses outside of the   saravexhypermarket.com   site </li>
+                </ul>
+
+                <p class="">
+                    5.2 saravexhypermarket.com reserves the right to refuse to post material on the saravexhypermarket.com site or to remove material already posted on the saravexhypermarket.com site. You must not try to re-post material that saravexhypermarket.com, has refused to post on the Saravex Hypermarket site or has previously been removed from the saravexhypermarket.com site.
+                </p>
+
+                <p class="">
+                    5.3 You will be responsible for all losses, costs and expenses reasonably incurred by us, all damages awarded against us by a court and all sums paid by us as a result of any settlement agreed by us arising out or in connection with:
+                </p>
+
+                <ul>
+                    <li>Any claim by any third party that the use of the saravexhypermarket.com site by you is defamatory, offensive or abusive, or of an obscene or pornographic nature, or is illegal or is in breach of any applicable law, regulation or code of practice; and</li>
+                    <li>Any claim by any third party that the use of the saravexhypermarket.com site by you infringes that third party’s copyright or other intellectual property rights of whatever nature.</li>
+                </ul>
+
+                <p class="">
+                    5.4 By submitting material you are granting saravexhypermarket.com a perpetual, royalty-free, non-exclusive licence to reproduce, modify, translate, make available, distribute and sublicense the material in whole or in part and in any form.
+                </p>
+
+                <p class="font_semi">
+                    6.  USE OF COMMUNITY SITES
+                </p>
+
+                <p class="">
+                    The saravexhypermarket.com site includes a number of community sites, which may allow users to interact with each other via message boards, and other user forums (the “Community sites”).
+                </p>
+
+                <p class="">
+                    6.2 We advise you not to post or in any way reveal any of your personal details on the Community sites (for example, your address, telephone number or email).
+                </p>
+
+                <p class="">
+                    6.3 The saravexhypermarket.com site does not control or moderate the content placed on the Community sites. However, saravexhypermarket.com reserves the right to refuse to post material, to remove material posted on the Community sites and to contact you in the event that there are concerns about the content you have added to a Community site. The site may review or edit the content of the Community sites.
+                </p>
+
+                <p class="">
+                    6.4 saravexhypermarket.com makes no representations as to the validity of any opinion, advice, information or statement displayed on the message boards by third parties. You are solely responsible for the content of your messages posted on the message boards and the views expressed by individuals do not represent the views of saravexhypermarket.com.
+                </p>
+
+                <p class="font_semi">
+                    7.  THIRD PARTY WEBSITES
+                </p>
+
+                <p class="">
+                    As a convenience to saravexhypermarket.com customers, the saravexhypermarket.com site may include links to other websites or material. saravexhypermarket.com is not responsible for any of these websites or material, which is beyond its control.
+                </p>
+
+                <p class="font_semi">
+                    8.  ADVERTISING AND SPONSORSHIP
+                </p>
+
+                <p class="">
+                    Some areas within the saravexhypermarket.com site may contain advertising and sponsorship. Third party advertisers and sponsors are responsible for ensuring that material submitted for inclusion on the saravexhypermarket.com site complies with relevant laws and codes. We will not be responsible for any error or inaccuracy in advertising and sponsorship material provided by third parties.
+                </p>
+
+                <p class="font_semi">
+                    9.  AVAILABILITY OF THE SARAVEX HYPERMARKET SITE
+                </p>
+
+                <p class="">
+                    9.1 saravexhypermarket.com aims to offer a fault-free service. However, if a fault occurs in the service you should report it to the customer services (see paragraph 24 below for contact details) or by email at Saravex@saravexhypermarket.com and we will attempt to correct the fault as soon as we reasonably can.
+                </p>
+
+                <p class="">
+                    9.2 saravexhypermarket.com site may occasionally restrict access to the site to allow for repairs, maintenance or the introduction of new facilities or services.
+                </p>
+
+                <p class="">
+                    9.3. Some purchases made on the saravexhypermarket.com site will also be governed by specific product terms – If you are unsure about anything related to purchasing of any product please contact customer services for further assistance.
+                </p>
+
+                <p class="font_semi">
+                    10.  LIMITATIONS
+                </p>
+
+                <p class="">
+                    10.1 We have taken care to describe and show products as accurately as possible. Despite this, products may vary from their descriptions, product images are for representation purposes only and may vary slightly from the actual product. If there is anything that you do not understand, or if you wish to obtain further information, please contact customer services (see paragraph 25 below for contact details). Descriptions/performances of products stated against each are based on the catalogue and technical literature printed by the manufacturers/agent. Therefore, the write up provided against each product is not that of saravexhypermarket.com and subject to change without prior notice.
+                </p>
+
+                <p class="">
+                    10.2 Price may sometimes differ between Saravex Stores and saravexhypermarket.com; you will be charged the price on the saravexhypermarket.com upon use of this site. We are under no obligation to honour any in-store price or promotion in the event that it differs from those on the saravexhypermarket.com site.
+                </p>
+
+                <p class="">
+                    10.3 If, by mistake, we have underpriced a product, we will not be liable to supply that product to you at the stated price, provided that we notify you before we dispatch the product to you. In those circumstances, we will notify the correct price to you so you can decide whether or not you wish to order the product at that price. If you decide not to order the product, we will give you a full refund on any amount already paid for that product in accordance with our refund policy in paragraphs 16 & 17 below.
+                </p>
+
+                <p class="">
+                    10.4 The payment may be processed prior to saravexhypermarket.com dispatch of the product that you have ordered. If we have to cancel the order after we have processed the payment, the said amount will be reversed back to your credit card account. No cash disbursement shall be made under any condition whatsoever.
+                </p>
+
+                <p class="">
+                    10.5 The price of a product does not include the delivery charge, which will depend on the delivery method you choose and will be added during checkout. See paragraph 15 below.
+                </p>
+
+                <p class="font_semi">
+                    11.  AVAILABILITY
+                </p>
+
+                <p class="">
+                    11.1 All products advertised are subject to availability or while stocks last (as may be applicable).
+                </p>
+
+                <p class="">
+                    11.2 We try to ensure that we always stock the full product range and will let you know if the product is out of stock. If for any reason beyond our reasonable control we are unable to supply a particular product, we will not be liable to you except to ensure that you are not charged for that product.
+                </p>
+
+                <p class="">
+                    11.3 In the interests of all our customers, we may place restrictions on bulk buying of some products. saravexhypermarket.com reserves the right at our sole discretion, to limit the quantity per person, per household or per order. The said limitations may be applicable to orders placed by the same account, the same credit card and also to orders that use the same billing and/or shipping address. saravexhypermarket.com will provide notification to the customer should such limits be applied.
+                </p>
+
+                <p class="font_semi">
+                    12.  ACCEPTANCE OF ORDERS
+                </p>
+
+                <p class="">
+                    12.1 Your order is an offer to buy from us. We will send you an order acknowledgement email detailing the products you have ordered.
+                </p>
+
+                <p class="">
+                    12.2 Nothing that we do or say will amount to any acceptance of your offer until we send you an email notifying you of the order acknowledgment. At this point, a contract will be made between us for you to buy and for us to sell the products that you have ordered from us.
+                </p>
+
+                <p class="">
+                    12.3 After the time the contract is made, you cannot amend your order (but please see your right to cancel an order in paragraph 15 below).
+                </p>
+
+                <p class="">
+                    12.4 At any point up until the contract is made, we may decline to supply a product to you. If we decline to supply a product to you and you have already paid for it, we will give you a full refund of any amount already paid for that product in accordance with our refund policy in paragraphs 16 & 17 below.
+                </p>
+
+                <p class="font_semi">
+                    13.  DELIVERIES
+                </p>
+
+                <p class="">
+                    13.1 Delivery will be made to the address specified when you complete the order. At point of delivery, identity verification of the Consignee by sighting either an original labour card, passport, driving license, Emirates ID, Free zone ID to support consignee verification, will be required by our courier partners.
+                </p>
+
+                <p class="">
+                    13.2 Please note that we do not do international shipping.
+                </p>
+
+                <p class="">
+                    13.3 We use a variety of delivery methods, depending on the size of the product you order. Some products are delivered directly by our supplier and the supplier will contact you to arrange delivery.
+                </p>
+
+                <p class="">
+                    13.4 Whilst we make considerable effort to deliver all your products within 48 working hours of the date of your order, we shall not be liable if we fail to do so in part or in full due to circumstances beyond our control. We shall contact you to let you know if we are having any problems getting a product to you within that time. Supplier delivered products for areas outside of main city limits that are classed as remote or semi remote may take up to 5 working days dependant on supplier schedules. (Contact Customer Support if further information is required)
+                </p>
+
+                <p class="">
+                    13.5 Before ordering online you should check the following:
+                </p>
+
+                <ul>
+                    <li>The item will fit through the doors.</li>
+                    <li>The item will fit the exact space allocated in your house.</li>
+                    <li>There is a clear path between the road and your front door.</li>
+                    <li>If you live in an apartment, the lift is adequate to take delivery in size and weight.</li>
+                    <li>If there are any access difficulties, please inform us in advance, on the day you should ensure that:</li>
+                    <li>There is a clear path to your house.</li>
+                    <li>Your floors are covered to prevent scuffing.</li>
+                    <li>Any delicate objects are put in a safe place.</li>
+                </ul>
+
+                <p class="font_semi">
+                    12.  LIMITATIONS
+                </p>
+
+                <p class="">
+                    These Terms and Conditions were last updated on 8th May 2019.
+                </p>
+
+                <ul>
+                    <li>Impersonating another person</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--======== footer ========-->
+<footer class="footer bg_secondary">
+    <!--======== main footer ========-->
+    <div class="main_footer">
+        <div class="container py_2_5">
+            <div class="row gap_1_25_lg">
+                <div class="col_12 col_sm_6 col_lg_3">
+                    <div class="footer_logo mb_1_25">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <div class="footer_data">
+                        <p class="mb_1_25">Saravex Hypermarket, the retail division of the multidimensional and multinational Saravex Group International has always been known as a trend setter of the retail industry in the region</p>
+
+                        <p class="mb_1 pl_0_75">
+                            <a href="tel:+8801765375500">Phone: 01765375500</a>
+                        </p>
+                        <p class="mb_1 pl_0_75">
+                            <a href="mailto:contact@saravexhypermarket.com">contact@saravexhypermarket.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col_12 col_sm_6 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">top categories</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                        <li><a href="#">Kids Fashion</a></li>
+                        <li><a href="#">Health & Beauty</a></li>
+                        <li><a href="#">Home & Lifestyle</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">know us</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">policies</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Service & Warranty</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_3">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">available on</div>
+
+                    <div class="flex flex_col align_start row_gap_1_25 mb_1_25">
+                        <img src="images/google-play.svg" alt="" class="footer_img">
+                        <img src="images/app-store.svg" alt="" class="footer_img">
+                    </div>
+
+                    <div class="footer_subtitle text_capital font_bold font_16 mb_1_25">social links:</div>
+
+                    <ul class="footer_social_list flex flex_wrap_sm justify_start gap_0_5">
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======== bottom footer ========-->
+    <div class="bottom_footer">
+        <div class="container py_1_25">
+            <div class="flex flex_col flex_row_lg align_center">
+                <p class="text_center mb_0_75 mb_0_lg">Copyright © 2022 <a href="#">Saravex Hypermarket</a> | All rights reserved.</p>
+    
+                <img src="images/footer-pay.png" alt="" class="bottom_footer_img">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--======== swiper js ========-->
+<script src="js/swiper.js"></script>
+
+<!--======== main js ========-->
+<script src="js/main.js"></script>
+</body>
+</html>
