@@ -443,6 +443,7 @@
     color: var(--white-color);
 }
 
+/* order track page */
 @media screen and (min-width: 768px) {
     .order_track_form {
         grid-template-columns: 1fr 1fr max-content;
@@ -455,4 +456,43 @@
         grid-column: span 8 / span 8;
         grid-column-start: 3;
     }
+}
+
+.order_track_card {
+    height: 5rem;
+}
+
+.order_progress_bar, 
+.order_progress_dot {
+    position: absolute;
+}
+
+.order_progress_bar {
+    width: 3px;
+    height: 0;
+    background: var(--tartiary-color);
+    left: -3px;
+    top: 0;
+}
+
+.order_track_card:nth-child(1) .order_progress_bar, 
+.order_track_card:nth-child(2) .order_progress_bar, 
+.order_track_card:nth-child(3) .order_progress_bar {
+    height: 100%;
+}
+
+.order_progress_dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    top: 50%;
+    left: -9px;
+    transform: translateY(-50%);
+    background: var(--secondary-color);
+}
+
+.order_track_card:nth-child(1) .order_progress_dot, 
+.order_track_card:nth-child(2) .order_progress_dot, 
+.order_track_card:nth-child(3) .order_progress_dot {
+    background: var(--tartiary-color);
 }
