@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--======== google fonts ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--======== fonts awesome ========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--======== swiper css ========-->
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!--======== style css ========-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--======== style css ========-->
+    <link rel="stylesheet" href="css/components.css">
+
+    <!--======== custom css ========-->
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Home - Saravex</title>
+</head>
+<body>
+
+<!--======== header ========-->
+<header class="header">
+    <!--======== topbar ========-->
+    <div class="topbar bg_secondary display_none_lg">
+        <div class="container py_0_5">
+            <div class="flex">
+                <div class="toggle_dropdown language_switch">
+                    <div class="toggle_btn language_switch_btn">
+                        <img src="images/uk-symbol.png" alt="" class="toggle_btn_trigger">
+                        <span class="toggle_btn_trigger">English</span>
+                        <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                    </div>
+                    
+                    <div class="toggle_dropdown_list language_switch_list">
+                        <a href="#">
+                            <img src="images/uk-symbol.png" alt="">
+                            <span>English</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/uae-symbol.png" alt="">
+                            <span>Bangla</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="topbar_info font_semi font_16">Support: 01765375500</div>
+            </div>
+        </div>
+    </div>
+
+    <!--======== main header ========-->
+    <div class="main_header bg_primary">
+        <div class="container py_0_5">
+            <div class="flex">
+                <div class="flex gap_1_25_lg">
+                    <!--======== menu toggle button ========-->
+                    <div class="nav_toggle font_20 pr_0_75 display_none_lg" id="nav-toggle">
+                        <i class="fa-solid fa-bars nav_toggle_trigger"></i>
+                    </div>
+
+                    <!--======== sidebar menu ========-->
+                    <div class="nav_menu position_relative display_none_lg" id="nav-menu">
+                        <!-- nav close -->
+                        <div class="nav_close flex justify_center position_absolute" id="nav-close">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <!-- sign in -->
+                        <div class="sidebar_signin flex justify_start col_gap_0_75 bg_secondary px_1_5 py_1">
+                            <div class="sidebar_sign_content font_20">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="sidebar_sign_data font_18">Hello, sign in</div>
+                        </div>
+
+                        <!-- pages -->
+                        <div class="sidebar_menu y_scroll thin_scrollbar">
+                            <!-- main pages -->
+                            <div class="sidebar_main_pages">
+                                <p class="font_18 font_semi px_1_5 pt_1 pb_0_5">Main Pages</p>
+
+                                <ul class="flex flex_col">
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Home</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>All Products</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Wishlist</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Compare</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- categories pages -->
+                            <div class="sidebar_main_pages">
+                                <p class="font_18 font_semi px_1_5 pt_1 pb_0_5">Categories</p>
+
+                                <ul class="flex flex_col">
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Men's Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Women's Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Kids Fashion</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Shoes</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Gadgets</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Grocery</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Sunglass</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Jwellery</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="w_100">
+                                        <a href="#" class="flex px_1_5 py_1">
+                                            <span>Perfume</span>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--======== logo ========-->
+                    <a href="#" class="nav_logo">
+                        <img src="images/logo.png" alt="">
+                    </a>
+
+                    <!--===== location =====-->
+                    <button class="location_btn display_none display_flex_lg flex align_end gap_0_25 font_12 font_medium" data-modal-target="#location-modal">
+                        <i class="fa-solid fa-location-dot font_18"></i>
+                        <div>
+                            Deliver to<br>
+                            <span class="font_14">Bangladesh</span>
+                        </div>
+                    </button>
+
+                    <!--===== location modal =====-->
+                    <div class="modal_container" id="location-modal">
+                        <div class="modal_background"></div>
+                        <div class="modal_content">
+                            <div class="modal_close button_hover close_modal" title="Close" data-close-button><i class="fa-solid fa-xmark"></i></div>
+                
+                            <h4 class="modal_title">Select Delivery Address</h4>
+                
+                            <div class="modal_body">
+                                <div class="radius_0_25 hidden">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.95338886736!2d90.41968899999999!3d23.7808405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1704097224869!5m2!1sen!2sbd" width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
+                                <button class="btn bg_tartiary radius_0_25 mt_1">Confirm Location</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--======== desktop searchbar ========-->
+                    <div class="display_none display_block_lg">
+                        <form action="" method="post" class="search_form grid gap_0_5 radius_0_5">
+                            <div class="header_search_select flex gap_0_25 px_0_5">
+                                <div class="select_box">
+                                    <div class="option_selected">
+                                        All
+                                    </div>
+                                    <div class="option_container">
+                                        <div class="option_search">
+                                            <input type="text" name="" placeholder="Search...">
+                                        </div>
+                            
+                                        <div class="option">
+                                            <input type="radio" name="" id="men-fashion" class="option_radio">
+                                            <label for="men-fashion">Men's Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="women-fashion" class="option_radio">
+                                            <label for="women-fashion">Women's Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="kid-fashion" class="option_radio">
+                                            <label for="kid-fashion">Kids Fashion</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="grocery" class="option_radio">
+                                            <label for="grocery">Grocery</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="gadget" class="option_radio">
+                                            <label for="gadget">Gadgets</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="shoe" class="option_radio">
+                                            <label for="shoe">Shoes</label>
+                                        </div>
+                                        <div class="option">
+                                            <input type="radio" name="" id="jwellary" class="option_radio">
+                                            <label for="jwellary">Jwellary</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                            </div>
+
+                            <input type="email" name="" id="" class="px_1 py_0_5" placeholder="Search Savarex">
+            
+                            <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex gap_0_75 gap_1_25_lg">
+                    <!--===== sign in =====-->
+                    <a href="#" class="flex gap_0_5 header_signin_btn display_none_lg">
+                        <span>Sign in</span>
+                        <span class="font_20"><i class="fa-regular fa-user"></i></span>
+                    </a>
+
+                    <!--===== language switch =====-->
+                    <div class="toggle_dropdown language_switch display_none display_block_lg">
+                        <div class="toggle_btn language_switch_btn">
+                            <img src="images/uk-symbol.png" alt="" class="toggle_btn_trigger">
+                            <span class="toggle_btn_trigger">EN</span>
+                            <i class="fa-solid fa-caret-down toggle_btn_trigger"></i>
+                        </div>
+                        
+                        <div class="toggle_dropdown_list language_switch_list">
+                            <a href="#">
+                                <img src="images/uk-symbol.png" alt="">
+                                <span>EN</span>
+                            </a>
+                            <a href="#">
+                                <img src="images/uae-symbol.png" alt="">
+                                <span>BN</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--===== desktop sign in =====-->
+                    <a href="#" class="display_none display_block_lg font_12 font_medium">
+                        Hello, sign in<br>
+                        <span class="font_14">Your Account</span>
+                    </a>
+
+                    <!--===== return =====-->
+                    <a href="#" class="display_none display_block_lg font_12 font_medium">
+                        Returns<br>
+                        <span class="font_14">& Orders</span>
+                    </a>
+
+                    <!--===== cart =====-->
+                    <a href="#" class="nav_cart font_20">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container display_none_lg">
+            <form action="" method="post" class="mobile_search_form grid gap_0_5 hidden radius_0_5">
+                <input type="email" name="" id="" class="px_1 py_0_5" placeholder="Search Savarex">
+
+                <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+
+        <div class="container py_0_75 x_scroll no_scrollbar display_none_lg">
+            <ul class="w_max font_16 flex gap_0_75">
+                <li><a href="#">All Products</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Best Seller</a></li>
+                <li><a href="">Men's Fashion</a></li>
+                <li><a href="">Women's Fashion</a></li>
+                <li><a href="">Kids Fashion</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Grocery</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Jwellary</a></li>
+                <li><a href="">Perfume</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--======== secondary header ========-->
+    <div class="secondary_header bg_secondary">
+        <div class="container py_0_75 display_none display_block_lg">
+            <ul class="flex_lg justify_start_lg gap_1_25_lg">
+                <li><a href="">Home</a></li>
+                <li><a href="">All Product</a></li>
+                <li><a href="">Wishlist</a></li>
+                <li><a href="">Compare</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="container py_0_75 display_none_lg">
+            <button class="location_btn flex justify_start gap_0_25" data-modal-target="#location-modal">
+                <i class="fa-solid fa-location-dot font_18"></i>
+                <span>Deliver to Bangladesh</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--======== main content ========-->
+<main>
+    <!--======== privacy policy section ========-->
+    <section class="terms_condition_section py_1_75">
+        <div class="container">
+            <h3 class="text_center mb_2_5">Privacy Policy</h3>
+
+            <div class="grid gap_1 text_light">
+                <p class="">
+                    personal data. Every time you interact with Saravex Hypermarket through either our physical stores or e-commerce websites and engage our services, you agree to the use of information that is collected or submitted as stated in this Privacy Policy. Looking after your personal information is important to us, which is why we would like you to be confident that your data is kept safe and secured with us.
+                </p>
+                
+                <p class="">
+                    This Privacy Policy applies to all personal information collected by Saravex Hypermarket. Saravex Hypermarket can be referred here to as “Saravex”, “we”, “our” or “us” in this privacy statement as applicable. At Saravex, we are working hard to serve our customers better as we are keeping the personal data shared to us. We keep it as confidential and private as possible, which has become one of our top priorities.
+                </p>
+
+                <p class="">
+                    This privacy statement will further explain how and why we collect your personal information for the purpose of both managing your accounts with us and processing transactions made between you and Saravex Hypermarket.
+                </p>
+
+                <p class="font_semi">
+                    HOW WE COLLECT DATA INFORMATION
+                </p>
+
+                <p class="">
+                    This section tells you what kind of personal data we may collect from you when you use our services and the personally identifiable information we may receive from other sources. Through these information, we are able to provide our services to you, where the information you give are all necessary for off-line and online transactions, operational functions and marketing activities.
+                </p>
+
+                <p class="">
+                    We collect information related to your use of our website using cookies, web beacons, and log information. We use all these information to improve the functionality of the website every time we do an overall review of our users’ activities, which will make your access more secure and efficient.
+                </p>
+
+                <ul>
+                    <li>Cookies are small files containing strings of text stored on your computer that we use to authenticate you in transactions  made on our websites and deliver content specific to your interests and preferences.</li>
+                    <li>Web beacons are used often together with cookies. We use web beacons to monitor the user’s activity on our website, specifically on how long users visit our web pages, so we would be able to generate reviews and  results on website traffic, unique visitor counts, and other impression functions.</li>
+                    <li>Log information may include website requests,operating system,browser details,date and time of your request,and cookies that may identify your browser.</li>
+                    <li>We use IP addresses to analyse trends, administer the site, track user’s movement, and gather broad demographic information for operational use. IP addresses are not linked to personally identifiable  information.</li>
+                </ul>
+
+                <p class="">
+                    Acquiring your personal data may occur in the following circumstances whenever you engage with Saravex:
+                </p>
+
+                <ul>
+                    <li>When you register for our services on both the physical store and online store</li>
+                    <li>When you shop with us online, browse our websites, or use our mobile applications</li>
+                    <li>When you use our online or printed vouchers or coupons</li>
+                    <li>When you contact us or we contact you or you join our promotions, competitions, surveys, and products reviews about our services</li>
+                </ul>
+
+                <p class="">
+                    While you are transacting on our website, personally identifiable information collected about you may include:
+                </p>
+
+                <ul>
+                    <li>First and last name, email address, contact details including phone numbers, and PIN/ZIP code</li>
+                    <li>Demographic profile (like your age, gender, occupation, education, address and durables owned)</li>
+                    <li>Personal preferences and interests</li>
+                    <li>Your opinion on services, products, and features on our website</li>
+                </ul>
+
+                <p class="">
+                    We may also collect the following information about:
+                </p>
+
+                <ul>
+                    <li>The pages you visit/access</li>
+                    <li>The links you click on our website</li>
+                    <li>The number of times you access the page</li>
+                    <li>Things you view, add to bag, add to wish list</li>
+                    <li>Other websites you open simultaneously while browsing ours</li>
+                </ul>
+
+                <p class="font_semi">
+                    HOW WE USE DATA INFORMATION
+                </p>
+
+                <p class="">
+                    Using personal data may happen in the following circumstances regarding product and service fulfillment and transactions between the user and Saravex.
+                </p>
+
+                <p class="">
+                    Operational procedures and transactions:
+                </p>
+
+                <ul>
+                    <li>Fulfilling and managing purchases and enabling sales, processing and settling payments, handling orders, and providing receipts in both physical store and online shop</li>
+                    <li>Providing customer service, processing and assistance with dispute resolution, payment processing including returns, refunds, and other transaction-related issues</li>
+                    <li>Managing subscription services, including order management, billing, improving reorder experiences, communicating with the user about subscription, and offer other products and services</li>
+                    <li>Fulfilling other technical, logistical, financial, tax, legal, compliance, administrative, and/or back office functions</li>
+                    <li>Conducting a transaction where we collect information required by law</li>
+                    <li>Preventing fraudulent transactions, monitor against theft and otherwise protect our guests and our business</li>
+                </ul>
+
+                <p class="">
+                    Online marketing and social media
+                </p>
+
+                <ul>
+                    <li>Sending promotional campaigns, surveys, new product and website features, and service or policy update notices through official marketing channels, such as SMS, whatsapp, email, and social media; wherein both auto-generated and customised messages are sent with personalised content based on the user’s personal characteristics or preferences (if you opt in to receiving such information)</li>
+                    <li>Delivering coupons, mobile coupons, newsletters, in-store receipt messages, e-mails, mobile messages, and social media notifications, and administering raffle draws and contests in both physical store and e-commerce</li>
+                    <li>Responding to requests for information about our products and services in our stores and on our websites or mobile application and connecting with the user through phone call, email, online shop, or social media for communications regarding transactions and inquiries</li>
+                </ul>
+
+                <p class="font_semi">
+                    DISCLOSURE TO THIRD PARTIES
+                </p>
+
+                <p class="">
+                    We disclose personal data to other organisations/companies that perform services for the requirements of our transactions—courier companies for delivery of the products and other service providers that may require personal data for efficient implementation of processes related only to this website. We do not sell, share, or rent any such personal information, unless required by special circumstances such as compliance with subpoenas, court orders, requests from legal authorities or law enforcement agencies requiring such disclosure. This website takes every precaution to protect users’ information. When users submit sensitive information via the website, your information is protected both online and off-line.
+                </p>
+
+                <p class="font_semi">
+                    SOCIAL MEDIA
+                </p>
+
+                <p class="">
+                    We operate channels, pages and accounts on some social media sites to inform, assist and engage with customers. We monitor and record comments and posts made on these channels about us so that we can improve our services.
+                </p>
+
+                <p class="">
+                    Saravex Hypermarket is not responsible for any information posted on those sites other than information we have posted ourselves. We do not endorse the social media sites themselves or any information posted on them by third parties.
+                </p>
+
+                <p class="">
+                    The following companies, Facebook, Twitter, Instagram, Youtube, Google and Linkedin, may use data for their own purposes, specifically to market to you through their social media platforms and allow engagement on our websites. This includes profiling and targeting you with other advertising.
+                </p>
+
+                <p class="font_semi">
+                    YOUR RIGHTS AND ACCESS TO INFORMATION
+                </p>
+
+                <p class="">
+                    All information that we have collected is available in our database of contacts. For users who registered on Saravex Hypermarket, the e-commerce platform for a big variety of products, all information are available online in your account and you may access to such information at any time by logging in to your account through our website.
+                </p>
+
+                <p class="">
+                    In relation to your personal data, you have the followings rights, as mentioned below:
+                </p>
+
+                <ul>
+                    <li>Request correction or updation of the personal data that we have with us about you. This enables us to correct or   update any incomplete or inaccurate data we have about you. However, we may need to verify the accuracy of the     corrected or updated data  provided to us by you, to  secure the data and comply with our data accuracy policies</li>
+                    <li>Request to delete the personal data. You may request to delete or remove personal data where there are no reasons for   us processing that data. However, in special cases we may not be able to comply with your request of erasure for     specific legal reasons which will be notified to you, if applicable, at the time of your request.</li>
+                    <li>Objection regarding processing your personal data, where we are relying on a legitimate interest and there is something about your particular situation that makes you want to object processing on this ground if you feel it impacts on your fundamental rights and freedom.</li>
+                    <li>Request restriction of processing your personal data. In such circumstances that you have successfully made a request for restriction of your personal data, we will suspend the processing of your personal data—where you wish to cancel all services and close your accounts; or where you are challenging the accuracy of the personal data we hold, and where you may want to exercise or defend legal claims when we would normally delete or anonymise the data.</li>
+                </ul>
+
+                <p class="font_semi">
+                    OTHER DATA PROTECTION RIGHTS
+                </p>
+
+                <p class="">
+                    In relation to your personal data, you also have the right to objection in relation to direct marketing. You may also make an objection to use your personal data for direct marketing purposes. We will stop to send you such communications.
+                </p>
+
+                <p class="">
+                    There are several situations when you can restrict our use of your personal data, if you have made a general objection based on the provisions abovementioned, if you are reassuring the accuracy of the personal data we have in our database, and we have used your personal data improperly, but you do not want deletion. You can also file a complaint to data protection regulation body, as you also have the right to complain about how we have used your personal data.
+                </p>
+
+                <p class="font_semi">
+                    OPT-OUT POLICY
+                </p>
+
+                <p class="">
+                    Where you have opted-in to receive such communications, we may send you information about our products and services. To opt out of marketing or promotional emails, please click the unsubscribe link in the footer of the email communication to be removed from future communications. To stop receiving SMS, please reply with the four-digit opt out number stated in the SMS.
+                </p>
+
+                <p class="font_semi">
+                    RATINGS AND REVIEWS
+                </p>
+
+                <p class="">
+                    You agree that you are the sole author of ratings and reviews you submit to this website.  You are responsible and you own the intellectual property rights that relate to the content you submitted. You agree that you would not submit anything that is false, inaccurate, or misleading, whereas if you have been paid for such compensation that it influenced the content of your review; if content have been copied from anyone else, or infringes on any third party’s copyright, patent or trademark; if content you submitted violates any law or is considered to be offensive; if information provided includes references to other websites; or contains any computer viruses, worms or other potentially damaging computer files. Saravex Hypermarket reserves the right to remove or to refuse to post any submission for any reason.
+                </p>
+
+                <p class="font_semi">
+                    ANTI FRAUD STATEMENT
+                </p>
+
+                <p class="">
+                    Saravex Hypermarket has been notified of fraudulent activities circulating in different locations, through phone calls, messages, emails, and such communications on prize, promotion, recruitment, investment, and money transfer. If you encounter such information, please contact us. We urge you to beware of phone calls and messages with claims of winning prizes from Saravex and asking for your bank details. We do not ask for such information from our customers. Our promotion winners are listed in our stores, official websites & social media channels, while our recruitment process is done through either our official human resource teams or affiliated professional recruiting agencies. We urge you to immediately report such suspicious communication to relevant authorities and government bodies. Saravex Hypermarket reserves the right to take legal action, including criminal action, against such individuals and entities.
+                </p>
+
+                <p class="">
+                    If you receive any unauthorised, suspicious or fraudulent offers or interview call, please write an email us at customerservice@Saravexhypermarket.com.
+                </p>
+
+                <p class="font_semi">
+                    CONTACTING US AND COMPLAINTS
+                </p>
+
+                <p class="">
+                    If you require further information regarding our Privacy Policy, or if you have a complaint about our handling of your personal information, please email us at the following address: customerservice@Saravexhypermarket.com. If you have a complaint about our handling of personal information, we will be in contact, promptly and work with you to resolve the issue.
+                </p>
+
+                <p class="font_semi">
+                    LIMITATION OF LIABILITY
+                </p>
+
+                <p class="">
+                    Under no circumstance, including, but not limited to, negligence, shall Saravex be liable for any indirect, special, exemplary, or consequential damages that result from the use of, or the inability to use, including but not limited to the information, materials on the page, page content, page code, user services or the software. While Saravex shall take reasonable precautions against security breaches, no webpage or internet transmission is completely secure, and as such, Saravex shall not be liable for any indirect, special, exemplary or consequential damages that may result from unauthorized access, hacking, data loss or other breached that may occur.
+                </p>
+
+                <p class="font_semi">
+                    INDEMNITY
+                </p>
+
+                <p class="">
+                    By accessing the page of Saravex, the users, persons and third parties agree and undertake to act responsibly and cause no harm, loss or damage to Saravex. In the event that Saravex incurs any loss, harm or damage then Saravex shall be in right to take appropriate steps to identify the person(s) involved and seek indemnity and compensation for all loss, claim, demand, damage, costs, charges (including legal fees and charges) or prejudice that may be caused to Saravex on account of misuse of the page and the consequent affect upon Saravex.
+                </p>
+
+                <p class="font_semi">
+                    JURISDICTION
+                </p>
+
+                <p class="">
+                    The Privacy Policy will be governed by and construed in accordance with UAE law. Any disputes arising in relation to these Privacy Policy will be subject to the exclusive jurisdiction of the Courts of Abu Dhabi, U.A.E.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--======== newsletter section ========-->
+    <section class="newsletter_section my_1">
+        <div class="container newsletter_container bg_tartiary p_1 radius_0_5">
+            <div class="row row_gap_1_25 align_center">
+                <div class="col_12 col_md_6">
+                    <div class="flex justify_start align_start align_center_lg col_gap_0_5 col_gap_1_md">
+                        <div class="newsletter_content">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="newsletter_data">
+                            <h4>Sign up to us Newsletter</h4>
+                            <p>Be the First to Know. Sign up to newsletter today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_12 col_md_6">
+                    <form action="" method="post" class="newsletter_form grid">
+                        <input type="email" name="" id="" class="input" placeholder="Your email address">
+                        <button type="submit" class="btn font_semi text_upper">sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--======== footer ========-->
+<footer class="footer bg_secondary">
+    <!--======== main footer ========-->
+    <div class="main_footer">
+        <div class="container py_2_5">
+            <div class="row gap_1_25_lg">
+                <div class="col_12 col_sm_6 col_lg_3">
+                    <div class="footer_logo mb_1_25">
+                        <img src="images/logo.png" alt="">
+                    </div>
+
+                    <div class="footer_data">
+                        <p class="mb_1_25">Saravex Hypermarket, the retail division of the multidimensional and multinational Saravex Group International has always been known as a trend setter of the retail industry in the region</p>
+
+                        <p class="mb_1 pl_0_75">
+                            <a href="tel:+8801765375500">Phone: 01765375500</a>
+                        </p>
+                        <p class="mb_1 pl_0_75">
+                            <a href="mailto:contact@saravexhypermarket.com">contact@saravexhypermarket.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col_12 col_sm_6 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">top categories</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Men's Fashion</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                        <li><a href="#">Kids Fashion</a></li>
+                        <li><a href="#">Health & Beauty</a></li>
+                        <li><a href="#">Home & Lifestyle</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">know us</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_2">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">policies</div>
+
+                    <ul class="footer_menu_list flex flex_col align_start row_gap_1 mb_1_25">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Service & Warranty</a></li>
+                    </ul>
+                </div>
+
+                <div class="col_12 col_sm_4 col_lg_3">
+                    <div class="footer_subtitle text_upper font_bold font_16 mb_1_25">available on</div>
+
+                    <div class="flex flex_col align_start row_gap_1_25 mb_1_25">
+                        <img src="images/google-play.svg" alt="" class="footer_img">
+                        <img src="images/app-store.svg" alt="" class="footer_img">
+                    </div>
+
+                    <div class="footer_subtitle text_capital font_bold font_16 mb_1_25">social links:</div>
+
+                    <ul class="footer_social_list flex flex_wrap_sm justify_start gap_0_5">
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" class="flex justify_center bg_tartiary"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======== bottom footer ========-->
+    <div class="bottom_footer">
+        <div class="container py_1_25">
+            <div class="flex flex_col flex_row_lg align_center">
+                <p class="text_center mb_0_75 mb_0_lg">Copyright © 2022 <a href="#">Saravex Hypermarket</a> | All rights reserved.</p>
+    
+                <img src="images/footer-pay.png" alt="" class="bottom_footer_img">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--======== swiper js ========-->
+<script src="js/swiper.js"></script>
+
+<!--======== main js ========-->
+<script src="js/main.js"></script>
+</body>
+</html>
