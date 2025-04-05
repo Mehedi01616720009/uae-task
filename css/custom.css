@@ -1,6 +1,6 @@
 /* header */
 /* topbar */
-.language_switch_btn, 
+.language_switch_btn,
 .language_switch_list a {
     justify-content: space-between;
 }
@@ -56,8 +56,8 @@
     background: var(--light-bg-color);
     color: var(--text-color);
 }
- 
-.header_search_select .option label, 
+
+.header_search_select .option label,
 .header_search_select .option_search {
     padding-left: var(--m-0-5);
     padding-right: var(--m-0-5);
@@ -84,7 +84,7 @@
     color: var(--text-color);
 }
 
-.header_signin_btn, 
+.header_signin_btn,
 .nav_cart {
     color: var(--white-color);
 }
@@ -109,7 +109,7 @@
     left: -350px;
     background: var(--white-color);
     z-index: var(--z-fixed);
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .nav_menu.show-menu {
@@ -152,14 +152,14 @@
 }
 
 /* footer */
-.footer, 
-.footer p, 
+.footer,
+.footer p,
 .footer a {
-    color: #FFFFFF99;
+    color: #ffffff99;
 }
 
 .main_footer {
-    border-bottom: 1px solid #FFFFFF33;
+    border-bottom: 1px solid #ffffff33;
 }
 
 .footer_subtitle {
@@ -200,7 +200,7 @@
 
 .product_category_content {
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .product_category_content img {
@@ -220,7 +220,7 @@
 }
 
 /* newsletter section */
-.newsletter_section, 
+.newsletter_section,
 .newsletter_section a {
     color: var(--white-color);
 }
@@ -286,7 +286,7 @@
 
 @media screen and (min-width: 768px) {
     .checkout_section::before {
-        content: '';
+        content: "";
         width: 50%;
         height: 100%;
         position: absolute;
@@ -314,19 +314,19 @@
         width: 100%;
         bottom: 0;
         left: 0;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         background: var(--white-color);
     }
 }
 
-.order_summary_card, 
+.order_summary_card,
 .order_summary_card_data {
     display: grid;
 }
 
 .order_summary_card {
     grid-template-columns: 1fr 2.5fr;
-    column-gap: .75rem;
+    column-gap: 0.75rem;
 }
 
 .order_summary_card .order_summary_card_content img {
@@ -340,7 +340,7 @@
 @media screen and (min-width: 1024px) {
     .order_summary_card {
         grid-template-columns: max-content 1fr;
-        column-gap: .75rem;
+        column-gap: 0.75rem;
     }
 
     .order_summary_card .order_summary_card_content {
@@ -353,7 +353,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .cupon_form .input { 
+    .cupon_form .input {
         background: var(--white-color);
     }
 }
@@ -386,7 +386,7 @@
         width: 70px;
         height: 70px;
     }
-    
+
     .order_success_widgets div {
         border-right: 1px solid var(--gray-color);
     }
@@ -402,13 +402,13 @@
 }
 
 /* all product page */
-.input-min, 
+.input-min,
 .input-max {
     width: 4rem;
-    padding: .25rem .5rem;
+    padding: 0.25rem 0.5rem;
 }
 
-.category_filter input[type = radio] {
+.category_filter input[type="radio"] {
     display: none;
 }
 
@@ -430,7 +430,7 @@
 @media screen and (max-width: 576px) {
     .side_filter_section {
         height: 54px;
-        transition: all .3s;
+        transition: all 0.3s;
         overflow: hidden;
     }
 
@@ -462,7 +462,7 @@
     height: 5rem;
 }
 
-.order_progress_bar, 
+.order_progress_bar,
 .order_progress_dot {
     position: absolute;
 }
@@ -475,8 +475,8 @@
     top: 0;
 }
 
-.order_track_card:nth-child(1) .order_progress_bar, 
-.order_track_card:nth-child(2) .order_progress_bar, 
+.order_track_card:nth-child(1) .order_progress_bar,
+.order_track_card:nth-child(2) .order_progress_bar,
 .order_track_card:nth-child(3) .order_progress_bar {
     height: 100%;
 }
@@ -491,8 +491,8 @@
     background: var(--secondary-color);
 }
 
-.order_track_card:nth-child(1) .order_progress_dot, 
-.order_track_card:nth-child(2) .order_progress_dot, 
+.order_track_card:nth-child(1) .order_progress_dot,
+.order_track_card:nth-child(2) .order_progress_dot,
 .order_track_card:nth-child(3) .order_progress_dot {
     background: var(--tartiary-color);
 }
@@ -502,4 +502,22 @@
     padding-left: 1.5rem;
     display: grid;
     gap: 1rem;
+}
+
+.product_details_img {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 1.25rem;
+}
+
+.product_description_table_wrapper {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.product_description_table {
+    min-width: 600px;
+    max-width: 100%;
+    width: 100%;
 }
